@@ -3,8 +3,8 @@
     height: 56px;
     background-color: rgba(0, 0, 0, 0.678);
     box-shadow: 
-    1px 1px 8px rgba(0, 0, 0, 0.534)
-    ,1px 1px 90px rgba(0, 0, 0, 0.212);
+    1px 1px 18px rgba(0, 0, 0, 0.356)
+    ,1px 1px 90px rgba(0, 0, 0, 0.164);
 }
 .header__wrapper{
     width: 90%;
@@ -18,6 +18,7 @@
 
 .brand_name{
     font-size: 25px;
+    visibility: hidden;
     text-decoration: none;
     text-shadow: 2px 2px 19px rgba(124, 124, 124, 0.288);
     color: #ffffffef;
@@ -27,6 +28,116 @@
     list-style: none;
     
 }
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+.hidden {
+  opacity:0;
+}
+/* .console-container {
+ 
+  font-family:Khula;
+  font-size:1.4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:10px;
+  bottom:410px;
+  left:10;
+  right:790px;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+} */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.text {
+  position: absolute;
+  width: 750px;
+  font-size: 1.8rem;
+  left: 3%;
+  margin-left: 5px;
+  height: 40px;
+  top: 4%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 520px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  /* -weblit-float: left; */
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #ffffff;
+}
+
+.belize {
+  color: #f7f7f75e;
+}
+
+.pomegranate {
+  color: #ffffff52;
+}
+
+.green {
+  color: #ffffff;
+}
+
+.midnight {
+  color: #fdfeff;
+}
+
+
+
+
+
+
+
+
 .navbar li{
 display: inline-block;
 margin-left:10px;

@@ -1,7 +1,7 @@
 .auth{
   width: 100%;
   height: 100vh;
-  background-color: rgba(179, 14, 255, 0.329);
+  background-color: rgba(179, 14, 255, 0);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -11,9 +11,10 @@
   width: 350px;
   padding: 15px;
   border-radius: 1.7%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.171);
   opacity: 100%;
-  box-shadow: 2px 2px 192px rgba(128, 128, 128, 0.568);
-  background-color: rgba(111, 0, 255, 0.555);
+  box-shadow: 2px 2px 192px rgba(128, 128, 128, 0.438);
+  background-color: rgba(255, 255, 255, 0.233);
   animation-name: popup;
   animation-duration: 0.28s;
   animation-iteration-count: 1;
@@ -55,7 +56,7 @@
   position: absolute;
   top: 10px;
   z-index: 2;
-  text-shadow: 2px 2px 4px grey;
+  text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.548);
   left: 10px;
   
   background-color: rgba(255, 255, 255, 0);
@@ -77,7 +78,7 @@
   width: 100%;
   margin-top: 15px;
   height: 35px;
-  box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.493);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.103);
   background-color: rgb(70, 41, 199);
   color: #fff;
   border: 0;
@@ -85,7 +86,14 @@
   font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
+  transition:0.2s;
 }
+
+
+.submit_btn:hover{
+  background-color:rgb(44, 25, 129) ;
+}
+
 
 .static_label{
   top: -20px !important;
@@ -115,15 +123,15 @@
 
 .progressbar{
   width: 100%;
-  height: 18px;
+  height: 12px;
   border-radius: 6%;
-  transition: all .7s ease-in-out;
-  background-color: rgb(121, 121, 121);
+  transition: all 2s ease-in-out;
+  background-color: rgb(0, 0, 0);
 }
 .progress_value{
   height: 100%;
-  transition: all .7s ease-in-out;
-  background-color: rgb(109, 0, 252);
+  transition: all 2s ease-in-out;
+  background-color: rgba(0, 252, 13, 0.658);
 }
 
 .container{
@@ -132,19 +140,36 @@
 }
 
 .files__container{
-  width: 65%;
+  width: 50%;
   display: flex;
+  
   flex-wrap: wrap;
   align-items: center;
   gap:30px;
+   animation: showed 0.6s;
 }
+
+@keyframes showed {
+  0%{
+    
+opacity: 0%;
+filter: blur(1px);
+margin-top: 110px;
+  }
+100%{
+  margin-top: 0px;
+opacity: 100%;
+}  
+}
+
 .file_card{
   flex:1;
   max-width: 250px;
   padding: 12px;
-  background-color: rgba(119, 0, 255, 0.63);
+  background-color: rgba(255, 255, 255, 0.774);
   /* border: 1px solid rgba(132, 0, 255, 0.226); */
   display: flex;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.048);
   flex-direction: column;
   gap:10px;
   border-radius: 3%;
@@ -166,8 +191,8 @@
 }
 
 .file__cover{
-  width: 100%;
-  height: 150px;
+  width: 80%;
+  height: 88px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -214,7 +239,7 @@
 }
 a{
   text-decoration: none;
-  text-shadow: 2px 2px 5px grey;
-  color:rgba(0, 4, 255, 0.52);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
+  color:rgba(0, 0, 0, 0.87);
   font-weight: 500;
 }
